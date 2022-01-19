@@ -1,6 +1,6 @@
 <template>
   <div class="todoList">
-    <TodoItem v-for="item in todos" :key="item.id" :todos="item" @delete="$emit('delete', item)"/>
+    <TodoItem v-for="item in todos" :key="item.id" :todos="item" @delete="$emit('delete', item)" @checked="$emit('checked', item)"/>
   </div>
 </template>
 

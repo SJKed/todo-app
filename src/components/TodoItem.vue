@@ -1,6 +1,6 @@
 <template>
   <div class="todoItem">
-    <input type="checkbox" class="check" />
+    <input type="checkbox" class="check" @click="$emit('checked')" v-model="todos.completed" />
     <p>{{ todos.content }}</p>
     <img
       src="../assets/delete.svg"
